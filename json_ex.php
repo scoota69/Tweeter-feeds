@@ -41,13 +41,13 @@
 $i = 1;
 while ($i <=25) {
     echo $i++;
-}
 ?>
     <div>
-        <img src=" <?php echo $outputs -> results[i] -> profile_image_url;?>"/>
-        <img src=" <?php echo $outputs -> results[i] -> profile_image_url_https;?>"/>
-        <p> <?php echo $outputs -> results[i] -> from_user_name." "."@";
-              echo $outputs -> results[i] -> from_user;?></p>
-         <p> <?php echo $outputs -> results[i] -> text;
-            echo $outputs -> results[i] -> created_at; ?> </p>
+        <img src=" <?php echo $outputs -> results[$i] -> profile_image_url;?>"/>
+        <img src=" <?php echo $outputs -> results[$i] -> profile_image_url_https;?>"/>
+        <p> <?php echo $outputs -> results[$i] -> from_user_name." "."@";
+              echo $outputs -> results[$i] -> from_user;?></p>
+         <p> <?php echo $outputs -> results[$i] -> text;
+            echo $outputs -> results[$i] -> created_at; ?> </p>
     </div>        
+<?php } ?>
