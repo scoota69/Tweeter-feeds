@@ -36,6 +36,10 @@ p.user_name{
     margin:0px;
 }
 
+a {
+    font: none;
+}
+
 span.user {
     font-weight: bold; 
 }

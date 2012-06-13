@@ -28,7 +28,8 @@
         <div class="tweet">
             <img class="img" src=" <?php echo $outputs -> results[$i] -> profile_image_url;?>"/>
                 <div class="content">
-                    <p class="user_name"><span class="user"><?php echo $outputs -> results[$i] -> from_user_name." ";?></span>
+                    <p class="user_name"><a href="https://twitter.com/#!/<?php echo "@".$outputs -> results[$i] -> from_user;?>">
+                    <span class="user"><?php echo $outputs -> results[$i] -> from_user_name." ";?></span></a>
                      <span class="at_user"><?php echo "@".$outputs -> results[$i] -> from_user;?></span></p>
                     <p class="text"> <?php echo $outputs -> results[$i] -> text;
                             echo $outputs -> results[$i] -> created_at; ?> </p>
