@@ -19,8 +19,7 @@
     <div id="container">
         <header id="header">
             <h1> Tweet results for <?php echo $outputs -> query." "."<br/>";?></h1>
-        </header>
-         
+        </header>     
     <?php   
         $i = 1;
         while ($i <=25) {
@@ -29,12 +28,12 @@
         <div class="tweet">
             <img class="img" src=" <?php echo $outputs -> results[$i] -> profile_image_url;?>"/>
                 <div class="content">
-                    <p class="user_name"><?php echo $outputs -> results[$i] -> from_user_name." "."@";
-                         echo $outputs -> results[$i] -> from_user;?></p>
+                    <p class="user_name"><span class="user"><?php echo $outputs -> results[$i] -> from_user_name." ";?></span>
+                     <span class="at_user"><?php echo "@".$outputs -> results[$i] -> from_user;?></span></p>
                     <p class="text"> <?php echo $outputs -> results[$i] -> text;
                             echo $outputs -> results[$i] -> created_at; ?> </p>
-                    
                 </div>
+                <div id="clear"></div>
         </div>
 <?php } ?>
     </div>
