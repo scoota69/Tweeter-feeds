@@ -17,14 +17,18 @@
 
 <body>
     <div id="container">
-<?php
-    
-  echo $outputs -> query." "."<br/>";
-        
-    $i = 1;
-    while ($i <=25) {
-        echo $i++;
- ?>
+        <header>
+            <h1> Results for <?php echo $outputs -> query." "."<br/>";?></h1>
+        </header>
+         
+        <?php
+            
+         
+                
+            $i = 1;
+            while ($i <=25) {
+                echo $i++;
+         ?>
         <div class="tweet">
             <img src=" <?php echo $outputs -> results[$i] -> profile_image_url;?>"/>
             <p> <?php echo $outputs -> results[$i] -> from_user_name." "."@";
