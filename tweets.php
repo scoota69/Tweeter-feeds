@@ -18,7 +18,7 @@
 <body>
     <div id="container">
         <header id="header">
-            <h1> Results for <?php echo $outputs -> query." "."<br/>";?></h1>
+            <h1> Tweet results for <?php echo $outputs -> query." "."<br/>";?></h1>
         </header>
          
     <?php   
@@ -33,7 +33,7 @@
              <p> <?php echo $outputs -> results[$i] -> text;
                 echo $outputs -> results[$i] -> created_at; ?> </p>
         </div>
-    </div>
 <?php } ?>
+    </div>
 </body>
 </html>

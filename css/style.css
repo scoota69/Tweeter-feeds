@@ -1,0 +1,19 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#container {
+    background: #efefef;
+    margin: 100px auto 0;
+    padding: 30px 30px 20px;
+    width: 550px;
+}
+
+.tweet {
+    background: #cacaca;
+    margin: 100px auto 0;
+    padding: 10px 10px 10px;
+    width: 450px;
+    border: solid thin;
+    
+}
