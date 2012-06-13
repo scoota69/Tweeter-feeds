@@ -27,11 +27,14 @@
             $i++;
     ?>
         <div class="tweet">
-            <p><img src=" <?php echo $outputs -> results[$i] -> profile_image_url;?>"/>
-             <?php echo $outputs -> results[$i] -> from_user_name." "."@";
-                  echo $outputs -> results[$i] -> from_user;?></p>
-             <p> <?php echo $outputs -> results[$i] -> text;
-                echo $outputs -> results[$i] -> created_at; ?> </p>
+            <img class="img" src=" <?php echo $outputs -> results[$i] -> profile_image_url;?>"/>
+                <div class="content">
+                    <p class="user_name"><?php echo $outputs -> results[$i] -> from_user_name." "."@";
+                         echo $outputs -> results[$i] -> from_user;?></p>
+                    <p class="text"> <?php echo $outputs -> results[$i] -> text;
+                            echo $outputs -> results[$i] -> created_at; ?> </p>
+                    
+                </div>
         </div>
 <?php } ?>
     </div>
