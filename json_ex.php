@@ -44,10 +44,10 @@ while ($i <=25) {
 }
 ?>
     <div>
-        <img src=" <?php echo $outputs -> results[0] -> profile_image_url;?>"/>
-        <img src=" <?php echo $outputs -> results[0] -> profile_image_url_https;?>"/>
-        <p> <?php echo $outputs -> results[0] -> from_user_name." "."@";
-              echo $outputs -> results[0] -> from_user;?></p>
-         <p> <?php echo $outputs -> results[0] -> text;
-            echo $outputs -> results[0] -> created_at; ?> </p>
+        <img src=" <?php echo $outputs -> results[i] -> profile_image_url;?>"/>
+        <img src=" <?php echo $outputs -> results[i] -> profile_image_url_https;?>"/>
+        <p> <?php echo $outputs -> results[i] -> from_user_name." "."@";
+              echo $outputs -> results[i] -> from_user;?></p>
+         <p> <?php echo $outputs -> results[i] -> text;
+            echo $outputs -> results[i] -> created_at; ?> </p>
     </div>        
