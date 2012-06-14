@@ -38,10 +38,13 @@ p.user_name{
     margin:0px;
 }
 
-a {
-    text-decoration: none;
+.user_name a{
     color: #404040;
     font-size: 18px;
+}
+
+a {
+    text-decoration: none;
 }
 
 a:hover {
