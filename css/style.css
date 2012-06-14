@@ -1,3 +1,12 @@
+/*-------------------------------------------
+|
+| stylesheet for fitness tweet results
+|
+|-------------------------------------------*/
+
+/*-----------------
+| General
+|-----------------*/
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -9,11 +18,21 @@ body {
     padding: 30px 30px 20px;
     width: 550px;
 }
-
+/*---------------
+| Header
+|---------------*/
 h1 {
     text-align: center;
 }
 
+h1 span {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+/*----------------
+| Tweets
+|-----------------*/
 .tweet {
     background: #cacaca;
     margin: 50px auto 0;
@@ -28,6 +47,9 @@ h1 {
     width: 50px;
 }
 
+/*----------------
+| Main content of Tweets
+|-----------------*/
 .content {
     float: left;
     margin-left: 15px;
@@ -65,6 +87,9 @@ span.at_user{
     font-style: italic;
 }
 
+/*------------------------
+| Timestamp
+|-------------------------*/
 .time {
     float: left;
     width:50px;
