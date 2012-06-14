@@ -1,5 +1,6 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 
 #container {
@@ -7,6 +8,10 @@ body {
     margin: 100px auto 0;
     padding: 30px 30px 20px;
     width: 550px;
+}
+
+h1 {
+    text-align: center;
 }
 
 .tweet {
@@ -37,7 +42,13 @@ p.user_name{
 }
 
 a {
-    font: none;
+    text-decoration: none;
+    color: #404040;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #0066cc;
 }
 
 span.user {
