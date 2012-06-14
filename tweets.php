@@ -1,5 +1,5 @@
 <?php
-    //some json code and files ready to be convereted 
+    //some json code and files ready to be convereted into regular text and converted to on the internet
     $json = file_get_contents("https://search.twitter.com/search.json?q=fitness&rpp=25&include_entities=true&result_type=mixed");
     $outputs = json_decode($json);
 ?>
