@@ -1,5 +1,5 @@
 <?php
-
+    //retrieving files to be made into
     $json = file_get_contents("https://search.twitter.com/search.json?q=fitness&rpp=25&include_entities=true&result_type=mixed");
     $outputs = json_decode($json);
 ?>
@@ -13,15 +13,6 @@
 	<meta name="twitter" content="A template for tweets">
 	<!--Stylesheets-->
 	<link rel="stylesheet" href="css/style.css">
-	    
-	<!-- <script src="jquery-1.7.1.min.js"></script>
-	<script>
-	    $(function()
-{
-    var re = /(https?:\/\/(([-\w\.]+)+(:\d+)?(\/([\w/_\.]*(\?\S+)?)?)?))/ig;    
-    $('.text').html($('.text').html().replace(re, '<a href="$1" title="">$1</a>'));
-});
-	</script> -->
 </head>
 
 <body>
@@ -43,9 +34,13 @@ function makeClickableLinks($text){
                 '<a href="\\1" target=_blank>\\1</a>', $text);
         $text = ereg_replace('([[:space:]()[{}])(www.[-a-zA-Z0-9@:%_\+.~#?&//=]+)',
         '\\1<a href="http://\\2" target=_blank>\\2</a>', $text);
-        $text = ereg_replace('([_\.0-9a-z-]+@([0-9a-z][0-9a-z-]+\.)+[a-z]{2,3})',
-        '<a href="mailto:\\1" target=_blank>\\1</a>', $text);
+        $text = ereg_replace('([[:space:]()[{}])(@[-a-zA-Z0-9@:%_\+.~#?&//=]+)',
+        '\\1<a href="https://twitter.com/#!/\\2" target=_blank>\\2</a>', $text);
         return $text;
+	$text = ereg_replace('([[:space:]()[{}])(#[-a-zA-Z0-9@:%_\+.~?&//=]+)',
+        '\\1<a href="https://twitter.com/#!/search/%23\\2" target=_blank>\\2</a>', $text);
+        return $text;
+	
 }
 
         $i = 1;

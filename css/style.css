@@ -45,10 +45,15 @@ p.user_name{
 
 a {
     text-decoration: none;
+    color: 0066ff;
 }
 
 a:hover {
     color: #0066cc;
+}
+
+a:active{ 
+    color: #003399;
 }
 
 span.user {
