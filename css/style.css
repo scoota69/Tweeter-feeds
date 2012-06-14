@@ -25,16 +25,13 @@ h1 {
 .img {
     float: left;
     border: groove;
+    width: 50px;
 }
 
 .content {
     float: left;
     margin-left: 15px;
-    width: 305px;
-}
-
-#clear{
-    clear: both;
+    width: 315px;
 }
 
 p.user_name{
@@ -58,4 +55,16 @@ span.user {
 span.at_user{
     font-size: 12px;
     font-style: italic;
+}
+
+.time {
+    float: left;
+    width:50px;
+    color: #686868;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+#clear{
+    clear: both;
 }
