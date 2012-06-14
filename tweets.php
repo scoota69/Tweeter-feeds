@@ -37,7 +37,7 @@
                 </div>
 		<div class="time">
                         <?php $timestamp = strtotime($outputs -> results[$i] -> created_at);
-			echo date("M j, g:ia",$timestamp);?>
+			echo date("M j",$timestamp); echo "<br/>"; echo date("g:ia",$timestamp);?>
 		</div>
             <div id="clear"></div>
         </div>
